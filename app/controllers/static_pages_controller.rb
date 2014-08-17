@@ -2,9 +2,15 @@ class StaticPagesController < ApplicationController
   def home
   end
 
-  def help
+  def about 
   end
 
-  def about
+  def prodserv 
+  end
+
+  def contact
+  end
+
+  def press
   end
 end
