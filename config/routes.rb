@@ -1,12 +1,13 @@
 SampleApp::Application.routes.draw do
-  get "static_pages/home"
-  get "static_pages/prodserv"
-  get "static_pages/about"
-  get "static_pages/contact"
-  get "static_pages/blogs"
-  get "static_pages/press"
+  root 'static_pages#home'
 
-  root to: 'static_pages#home'
+  get "static_pages/home" => 'static_pages#home'
+  get "static_pages/prodserv" => 'static_pages#prodserv'
+  get "static_pages/about" => 'static_pages#about'
+  get "static_pages/contact" => 'static_pages#contact'
+  get "static_pages/blogs" => 'static_pages#blogs'
+  get "static_pages/press" => 'static_pages#press'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
